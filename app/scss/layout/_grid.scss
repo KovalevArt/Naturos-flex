@@ -1,0 +1,12 @@
+.container {
+	max-width: 114rem;
+	margin: 0 auto;
+
+	&:not(:last-child) {
+		margin-bottom: $gutter-vertical;
+	}
+	
+	&__sf {
+		max-width: 125rem;
+	}
+}

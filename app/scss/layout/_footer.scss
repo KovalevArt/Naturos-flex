@@ -1,0 +1,92 @@
+ .footer {
+ 	background-color: $color-grey-dark-3;
+ 	padding: 10rem 0;
+	font-size: 1.5rem;
+
+	&__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&__left {
+		flex: 0 0 60%;
+	}
+
+	&__right {
+		flex: 1 0 40%;
+	}
+
+ 	&__logo-box {
+ 		
+		text-align: center;
+		margin-bottom: 8rem;
+ 	}
+
+ 	&__logo {
+		width: 15rem;
+		height: auto;
+ 	}
+
+	&__navigation {
+		border-top: 1px solid $color-grey-dark;
+		padding-top: 2rem;
+		display: inline-block;
+		
+		
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+		
+
+	}
+
+	&__item {
+		margin: 0 1rem;
+		display: inline-block;
+		
+
+		@include respond(phone) {
+			
+			margin: 0 .5rem;	
+		}
+//
+		//&:not(:last-child) {
+			//margin-right: 1.5rem;
+		//}
+
+		
+	}
+
+	&__link {
+		&:link,
+		&:visited {
+			color:$color-gray-light-1;
+			background-color: $color-grey-dark-3;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			transition: all .3s;
+		}
+
+		&:hover,
+		&:active {
+			color: $color-primary;
+			box-shadow: 0 1rem  2rem  rgba($color-black, .4);
+			transform: rotate(4deg) scale(1.3);
+		}
+	}
+
+	&__copyright {
+		border-top: 1px solid $color-grey-dark;
+		padding: 2rem;
+		display: inline-block;
+		width: 100%;
+		letter-spacing: 2px;
+	}
+ }
